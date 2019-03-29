@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Movies</title>
+<!-- for-mobile-apps -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Movies" />
+
+<!-- //for-mobile-apps -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/single.css" rel='stylesheet' type='text/css' />
+<link href="css/medile.css" rel='stylesheet' type='text/css' />
+<!-- //pop-up -->
+<!-- font-awesome icons -->
+<link rel="stylesheet" href="css/font-awesome.min.css" />
+<!-- //font-awesome icons -->
+<!-- js -->
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+<!-- //js -->
+<!-- banner-bottom-plugin -->
+<script src="js/mainApp.js"></script>
+<!-- //banner-bottom-plugin -->
+<link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,700italic,700,400italic,300italic,300' rel='stylesheet' type='text/css'>
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){		
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+		var objMainApp = new MainApp();
+		objMainApp.init({
+			wrapper:$('#moviesList'),
+			posterURL:'https://image.tmdb.org/t/p/w500/',
+			backDropURL:'https://image.tmdb.org/t/p/w1280/'
+		});
+	});
+</script>
+<!-- start-smoth-scrolling -->
+</head>
+	
+<body>
+<!-- header -->
+	<div class="header">
+		<div class="container">
+			<div class="layouts_logo">
+				<a href="index.html"><h1>Yash<span>Movies</span></h1></a>
+			</div>
+			<div class="sign_in_register">
+				<ul>
+					<li><i class="fa fa-phone" aria-hidden="true"></i> (+000) 123 345 653</li>
+					<li><a href="#">Login</a></li>
+				</ul>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+<!-- //header -->
+<!-- nav -->
+	<div class="movies_nav">
+		<div class="container">
+			<nav class="navbar navbar-default">
+				<div class="navbar-header navbar-left">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+					<nav>
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="index.html">Home</a></li>
+							<li><a href="index.html">Genres</a></li>
+							<li><a href="index.html">tv - series</a></li>
+							<li><a href="index.html">news</a></li>
+							<li><a href="index.html">contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</nav>	
+		</div>
+	</div>
+<!-- //nav -->
+<div class="general_social_icons">
+	<nav class="social">
+		<ul>
+			<li class="twitter"><a href="#">Twitter <i class="fa fa-twitter"></i></a></li>
+			<li class="facebook"><a href="#">Facebook <i class="fa fa-facebook"></i></a></li>
+			<li class="dribbble"><a href="#">Dribbble <i class="fa fa-dribbble"></i></a></li>
+			<li class="g_plus"><a href="#">Google+ <i class="fa fa-google-plus"></i></a></li>				  
+		</ul>
+  </nav>
+</div>
+<div>
+	<div id="">
+</div>
+<!-- general -->
+	<div class="general">
+		<h4 class="latest-text latest_text">Featured Movies</h4>
+		<div class="container">
+			<div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
+				
+				<div id="myTabContent" class="tab-content">
+					<div role="tabpanel" class="tab-pane fade active in" id="home" aria-labelledby="home-tab">
+						<div id="moviesList" class="agile_featured_movies">
+							<div class="col-md-3 movie-gride-agile" id=""><!-- Movie id -->
+								<a href="single.html" class="hvr-shutter-out-horizontal"><img src="images/m15.jpg" title="album-name" class="img-responsive" alt=" " /><!-- Movie Image -->
+									<div class="action-icon"><i class="fa fa-play-circle" aria-hidden="true"></i></div>
+								</a>
+								<div class="mid-1 agileits_layouts_mid_1_home">
+									<div class="movie-text">
+										<h6><a href="single.html">God’s Compass</a></h6><!-- Movie name -->							
+									</div>
+								</div>
+								<div class="ribben">
+									<p>NEW</p>
+								</div>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- //general -->
+	
+<!-- footer -->
+	<div class="footer">
+		<div class="container">
+			<div class="col-md-5 footer_grid1_left">
+				<p>&copy; 2016 Movies. All rights reserved | Design by Kavita</p>
+			</div>
+			<div class="col-md-7 footer_grid1_right">
+				<ul>
+					<li>
+						<a href="#">FAQ</a>
+					</li>
+					<li>
+						<a href="#">Action</a>
+					</li>
+					<li>
+						<a href="#">Adventure</a>
+					</li>
+					<li>
+						<a href="#">Comedy</a>
+					</li>
+					<li>
+						<a href="#">Contact Us</a>
+					</li>
+				</ul>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+<!-- //footer -->
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+
+<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script>
+<!-- //here ends scrolling icon -->
+</body>
+</html>
